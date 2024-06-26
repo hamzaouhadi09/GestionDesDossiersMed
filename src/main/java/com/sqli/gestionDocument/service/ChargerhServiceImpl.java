@@ -38,8 +38,6 @@ public class ChargerhServiceImpl implements ChargerhService{
         existingChargeRh.setOfficeLocation(chargeRh.getOfficeLocation());
         return chargerhRepository.save(existingChargeRh);
     }
-
-
     @Override
     public void deleteChargeRh(Long id) {
         chargerhRepository.deleteById(id);
