@@ -1,20 +1,24 @@
 package com.sqli.gestionDocument.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
+import java.util.Date;
 import java.util.Set;
 
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class UserDto {
     private Long id;
     private String username;
     private String password;
+    private String email;
+    private Date DateNaissance;
     private String role;
+    private String Speciality;
+    private String Departement;
+    private String officeLocation;
+
 }
